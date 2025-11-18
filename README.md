@@ -25,8 +25,8 @@ Los programas deben compilarse en un entorno UNIX (Linux, macOS, WSL) con `gcc`.
 `./gestion_procesos`
 
 ### 2. Memoria Compartida
-**Preparar (requerido por `ftok`):**
-`touch shmfile`
+*(Nota: El archivo `shmfile` se incluye en el repositorio, ya que es requerido por la función `ftok` en `memoria_compartida.c` para generar la clave del segmento de memoria).*
+
 **Compilar:**
 `gcc memoria_compartida.c -o memoria_compartida`
 **Ejecutar:**
